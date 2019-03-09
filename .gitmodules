@@ -1,0 +1,21 @@
+[submodule "chrony"]
+	path = chrony
+	url = https://git.tuxfamily.org/chrony/chrony.git
+[submodule "gpsd"]
+	path = gpsd
+	url = git://git.savannah.gnu.org/gpsd.git
+[submodule "SoapySDR"]
+	path = SoapySDR
+	url = https://github.com/pothosware/SoapySDR.git
+[submodule "SoapyRemote"]
+	path = SoapyRemote
+	url = https://github.com/pothosware/SoapyRemote.git
+[submodule "SoapyPlutoSDR"]
+	path = SoapyPlutoSDR
+	url = https://github.com/pothosware/SoapyPlutoSDR.git
+[submodule "rx_tools"]
+	path = rx_tools
+	url = https://github.com/rxseger/rx_tools.git
+[submodule "rtl_433"]
+	path = rtl_433
+	url = https://github.com/merbanan/rtl_433.git

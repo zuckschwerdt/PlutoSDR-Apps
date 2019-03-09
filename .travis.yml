@@ -1,0 +1,20 @@
+language: c
+os: linux
+addons:
+  apt:
+    packages:
+      - cmake
+      - bison
+      - scons
+      - p7zip
+install: ./install_linaro.sh
+script: ./cross_build.sh
+before_deploy: "mv plutosdr-apps.tar.gz plutosdr-apps-${TRAVIS_TAG}.tar.gz"
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file: "plutosdr-apps-${TRAVIS_TAG}.tar.gz"
+  skip_cleanup: true
+  on:
+    repo: zuckschwerdt/PlutoSDR-Apps
+    tags: true
